@@ -15,7 +15,7 @@ const Main = () => {
           <h3>Konva Viewer 3</h3>
         </a>
         <a href="/konvaviewer4">
-          <h3>Konva Viewer 4</h3>
+          <h3>Konva Viewer 4: Emulate screen moving with transform</h3>
         </a>
       </div>
     </div>
