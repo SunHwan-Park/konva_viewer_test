@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect } from "react";
-import { MAX_SCALE, MIN_SCALE, VIEWER_HEIGHT, VIEWER_WIDTH } from "./const";
+import { MAX_SCALE, MIN_SCALE, VIEWER_HEIGHT, VIEWER_WIDTH } from "../const";
 
 type Props = {
   imageWidth: number;

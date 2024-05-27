@@ -4,11 +4,11 @@ import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
-import Main from "./Main";
-import KonvaViewer1 from "./KonvaViewer1";
-import KonvaViewer2 from "./KonvaViewer2";
-import KonvaViewer3 from "./KonvaViewer3";
-import KonvaViewer4 from "./KonvaViewer4";
+import Main from "./pages/Main";
+import KonvaViewer1 from "./pages/KonvaViewer1";
+import KonvaViewer2 from "./pages/KonvaViewer2";
+import KonvaViewer3 from "./pages/KonvaViewer3";
+import KonvaViewer4 from "./pages/KonvaViewer4";
 
 const router = createBrowserRouter([
   { path: "/", element: <Main /> },

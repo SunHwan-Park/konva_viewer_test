@@ -1,10 +1,10 @@
 import React from "react";
 import { Image, Layer, Stage } from "react-konva";
 
-import { VIEWER_HEIGHT, VIEWER_WIDTH } from "./const";
+import { VIEWER_HEIGHT, VIEWER_WIDTH } from "../const";
 
-import useZoomController from "./hooks/useZoomController";
-import useImageSelector from "./hooks/useImageSelector";
+import useZoomController from "../hooks/useZoomController";
+import useImageSelector from "../hooks/useImageSelector";
 
 const KonvaViewer1 = () => {
   const { image, imageWidth, imageHeight, Selector } = useImageSelector();

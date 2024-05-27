@@ -1,5 +1,5 @@
 import { useState } from "react";
-import ZoomController from "../ZoomController";
+import ZoomController from "../components/ZoomController";
 
 const useZoomController = ({
   imageWidth,
