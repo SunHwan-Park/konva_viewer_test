@@ -9,6 +9,7 @@ import KonvaViewer1 from "./pages/KonvaViewer1";
 import KonvaViewer2 from "./pages/KonvaViewer2";
 import KonvaViewer3 from "./pages/KonvaViewer3";
 import KonvaViewer4 from "./pages/KonvaViewer4";
+import KonvaViewerDrawing from "./pages/KonvaViewerDrawing";
 
 const router = createBrowserRouter([
   { path: "/", element: <Main /> },
@@ -16,6 +17,7 @@ const router = createBrowserRouter([
   { path: "/konvaviewer2", element: <KonvaViewer2 /> },
   { path: "/konvaviewer3", element: <KonvaViewer3 /> },
   { path: "/konvaviewer4", element: <KonvaViewer4 /> },
+  { path: "/konvaviewer-drawing", element: <KonvaViewerDrawing /> },
 ]);
 
 const root = ReactDOM.createRoot(

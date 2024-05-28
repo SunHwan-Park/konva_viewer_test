@@ -4,6 +4,8 @@ import { MAX_SCALE, MIN_SCALE, VIEWER_HEIGHT, VIEWER_WIDTH } from "../const";
 type Props = {
   imageWidth: number;
   imageHeight: number;
+  viewerWidth?: number;
+  viewerHeight?: number;
   scale: number;
   setScale: (value: number) => void;
 };
@@ -11,6 +13,8 @@ type Props = {
 const ZoomController: React.FC<Props> = ({
   imageWidth,
   imageHeight,
+  viewerWidth = VIEWER_WIDTH,
+  viewerHeight = VIEWER_HEIGHT,
   scale,
   setScale,
 }) => {
@@ -35,9 +39,9 @@ const ZoomController: React.FC<Props> = ({
 
   const fitScale = useCallback(() => {
     const newScale =
-      Math.min(VIEWER_WIDTH, VIEWER_HEIGHT) / Math.max(imageWidth, imageHeight);
+      Math.min(viewerWidth, viewerHeight) / Math.max(imageWidth, imageHeight);
     setScale(newScale);
-  }, [imageHeight, imageWidth, setScale]);
+  }, [imageHeight, imageWidth, setScale, viewerHeight, viewerWidth]);
 
   useEffect(() => {
     fitScale();
