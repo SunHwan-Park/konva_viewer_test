@@ -1,18 +1,31 @@
 import { useMemo, useState } from "react";
 
-import sample1024px from "../sampleImages/about1024px.png";
-import sample10000px from "../sampleImages/about10000px.jpg";
-import sample15000px from "../sampleImages/about15000px.jpg";
-import sample20000px from "../sampleImages/about20000px.jpg";
-import sample30000px from "../sampleImages/about30000px.jpg";
+import square1024 from "../sampleImages/1024x1024.jpg";
+import square6400 from "../sampleImages/6400x6400.jpg";
+import square10000 from "../sampleImages/10000x10000.jpg";
+import square12000 from "../sampleImages/12000x12000.jpg";
+import square16000 from "../sampleImages/16000x16000.jpg";
+import square20000 from "../sampleImages/20000x20000.jpg";
+import square22000 from "../sampleImages/22000x22000.jpg";
+import square23000 from "../sampleImages/23000x23000.jpg";
+import square24000 from "../sampleImages/24000x24000.jpg";
+import square25000 from "../sampleImages/25000x25000.jpg";
+import square26000 from "../sampleImages/26000x26000.jpg";
+
 import useImage from "use-image";
 
 const IMAGE_LIST = [
-  sample1024px,
-  sample10000px,
-  sample15000px,
-  sample20000px,
-  sample30000px,
+  square1024,
+  square6400,
+  square10000,
+  square12000,
+  square16000,
+  square20000,
+  square22000,
+  square23000,
+  square24000,
+  square25000,
+  square26000,
 ];
 
 const useImageSelector = () => {
